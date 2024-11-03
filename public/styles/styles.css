@@ -358,8 +358,8 @@ hr {
 
 @media (max-height: 1000px) {
   .content {
-    height: 95vh;
-    width: 67vh;
+    max-height: 95vh;
+    max-width: 67vh;
   }
 
   .input-container {
