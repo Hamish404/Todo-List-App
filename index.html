@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="public/styles/styles.css">
+  <script src="index.js" defer></script>
+  <script src="https://kit.fontawesome.com/808a9bf7e3.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="utility">
+    <div class="container">
+      <div class="content">
+        
+        <div class="header">
+          <h1 class="title">
+            <span class="to-do">
+              To-Do
+            </span>
+            <span class="list">
+              List
+              <i class="fa-solid fa-list-check fa-2xl icon"></i>
+            </span>
+          </h1>
+        </div>
+
+        <hr class="header">
+
+        <div class="wrapper">
+
+          <div class="input-container">
+            <input type="text" class="input" placeholder="What do you need to do?" maxlength="50">
+            <button type="button" class="add-btn">ADD</button>
+          </div>
+          
+          <div class="list-items-container">
+            <!-- dynamic content here -->
+          </div>
+
+        </div>
+
+        <button type="button" class="sort-btn">
+          SORT
+        </button>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
