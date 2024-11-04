@@ -145,8 +145,8 @@ function addTaskToList() {
   dropdown.append(optionLow, optionMedium, optionHigh);
   dropdownContainer.append(dropdownButton, dropdown);
   labelElement.append(dropdownContainer);
-  checkboxPWrapper.append(checkboxInput, labelElement, taskText);
-  listItems.append(checkboxPWrapper, deleteButton, underline);
+  checkboxPWrapper.append(checkboxInput, labelElement, taskText, deleteButton);
+  listItems.append(checkboxPWrapper, underline);
   listItemsContainer.append(listItems);
 
   deleteButton.addEventListener('mouseover', () => {
@@ -269,8 +269,8 @@ function onPageLoad() {
     dropdown.append(optionLow, optionMedium, optionHigh);
     dropdownContainer.append(dropdownButton, dropdown);
     labelElement.append(dropdownContainer);
-    checkboxPWrapper.append(checkboxInput, labelElement, taskText);
-    listItems.append(checkboxPWrapper, deleteButton, underline);
+    checkboxPWrapper.append(checkboxInput, labelElement, taskText, deleteButton);
+    listItems.append(checkboxPWrapper,  underline);
     listItemsContainer.append(listItems);
 
     deleteButton.addEventListener('mouseover', () => {
