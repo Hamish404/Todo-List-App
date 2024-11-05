@@ -350,50 +350,13 @@ hr {
 /* M height */
 @media (max-height: 1000px) {
 
-  .header {
-    justify-content: flex-start;
-    padding-left: 1rem;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .to-do {
-    font-size: 2.5rem;
-  }
-
-  .icon {
-    font-size: 2.5rem !important;
-    left: 5rem;
-  }
-
-  hr {
-    border: 2.5px solid black;
-    width: 92%;
+  .input-container {
+    margin: 40px 0px 40px 0px;
   }
 
   .content {
     max-height: 90vh;
     max-width: 63.6vh;
-  }
-
-  .input-container {
-    margin: 40px 0px 40px 0px;
-  }
-
-  .input {
-    height: 3.2rem;
-  }
-
-  .add-btn {
-    width: 8rem;
-    height: 3.2rem;
-  }
-
-  .sort-btn {
-    width: 8rem;
-    height: 3.2rem;
   }
 }
 
@@ -535,11 +498,32 @@ hr {
   }
 
   .header {
+    justify-content: flex-start;
+    padding-left: 1rem;
     margin-left: 5.2%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .to-do {
+    font-size: 2.5rem;
+  }
+
+  .icon {
+    font-size: 2.5rem !important;
+    left: 5rem;
+  }
+
+  hr {
+    border: 2.5px solid black;
+    width: 92%;
   }
 
   .input-container {
     margin: 20px 0px 20px 0px;
+    height: 3.2rem;
   }
 
   .input {
@@ -547,7 +531,7 @@ hr {
   }
 
   .input::placeholder {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0;
   }
 
@@ -576,12 +560,12 @@ hr {
   }
 
   .add-btn {
-    width: 5rem;
-    font-size: 0.8rem;
+    width: 5.5rem;
+    font-size: 0.7rem;
   }
 
   .sort-btn {
-    width: 5rem;
-    font-size: 0.8rem;
+    width: 5.5rem;
+    font-size: 0.7rem;
   }
 }
