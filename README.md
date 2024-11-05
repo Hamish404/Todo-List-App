@@ -62,10 +62,6 @@ Customization
 	•	Colors and Styles: Adjust CSS variables in styles.css to customize the theme.
 	•	Icons: Modify or add icons using Font Awesome’s icon library.
 
-License
-
-Distributed under the MIT License. See LICENSE for more information.
-
 Contact
 
 Hamish Tanner - https://github.com/Hamish404 - HamishTanner404@gmail.com
