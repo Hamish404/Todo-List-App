@@ -358,6 +358,25 @@ hr {
     max-height: 90vh;
     max-width: 63.6vh;
   }
+
+}
+
+/* S height */
+
+@media (max-height: 850px) {
+
+  .input-container {
+    margin: 40px 0px 40px 0px;
+  }
+
+  .add-btn {
+    width: 9rem;
+  }
+
+  .sort-btn {
+    width: 9rem;
+  }
+
 }
 
 /* 2xl */
