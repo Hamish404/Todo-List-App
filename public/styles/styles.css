@@ -76,7 +76,7 @@ body {
   position: absolute;
   left: 100%;
   bottom: -0.1rem;
-  font-size: 3.2rem;
+  font-size: 3.2rem !important;
 }
 
 hr {
@@ -364,15 +364,8 @@ hr {
   }
 
   .icon {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
     left: 5rem;
-    /* display: flex; */
-    /* align-items: center; */
-    /* position: absolute; */
-    /* left: 100%; */
-    /* bottom: -0.1rem; */
-    /* font-size: 3.2rem; */
-    /* border: 2px solid lime; */
   }
 
   hr {
@@ -575,6 +568,7 @@ hr {
 
   .task-text {
     font-size: 1.1em;
+    letter-spacing: 0.05rem;
   }
 
   .delete-btn {
