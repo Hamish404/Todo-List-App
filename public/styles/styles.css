@@ -52,6 +52,7 @@ body {
 .header {
   display: flex;
   margin-left: 2.5rem;
+  align-items: center;
 }
 
 .title {
@@ -349,6 +350,36 @@ hr {
 /* M height */
 @media (max-height: 1000px) {
 
+  .header {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .to-do {
+    font-size: 2.5rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    left: 5rem;
+    /* display: flex; */
+    /* align-items: center; */
+    /* position: absolute; */
+    /* left: 100%; */
+    /* bottom: -0.1rem; */
+    /* font-size: 3.2rem; */
+    /* border: 2px solid lime; */
+  }
+
+  hr {
+    border: 2.5px solid black;
+    width: 92%;
+  }
+
   .content {
     max-height: 90vh;
     max-width: 63.6vh;
@@ -372,18 +403,6 @@ hr {
     height: 3.2rem;
   }
 }
-
-/* S height */
-
-@media (max-height: 700px) {
-
-  .content {
-    max-height: 80vh;
-    max-width: 56.5vh;
-  }
-
-}
-
 
 /* 2xl */
 @media (max-width: 1536px) {
@@ -526,20 +545,12 @@ hr {
     margin-left: 5.2%;
   }
 
-  .title {
-    font-size: 3rem;
-  }
-
-  .icon {
-    font-size: 2.5rem;
-  }
-
-  hr {
-    width: 92%;
-  }
-  
   .input-container {
     margin: 20px 0px 20px 0px;
+  }
+
+  .input {
+    font-size: 0.7rem;
   }
 
   .input::placeholder {
@@ -579,4 +590,4 @@ hr {
     width: 5rem;
     font-size: 0.8rem;
   }
-} */
+}

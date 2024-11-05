@@ -6,7 +6,7 @@ const listItemsContainer = document.querySelector('.list-items-container');
 const iconStyling = document.querySelector('.icon');
 let sortIndex = 0;
 
-iconStyling.style.fontSize = '3.5rem';
+// iconStyling.style.fontSize = '3.5rem';
 
 let priorityOrderAsc = {
   'High': 1,
