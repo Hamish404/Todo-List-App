@@ -5,6 +5,7 @@ const wrapper = document.querySelector('.wrapper');
 const listItemsContainer = document.querySelector('.list-items-container');
 const iconStyling = document.querySelector('.icon');
 let sortIndex = 0;
+let globalIsChecked = false;
 
 let priorityOrderAsc = {
   'High': 1,
@@ -31,6 +32,11 @@ const sortUncheckedDesc = () => {
   tasks.sort((a, b) => priorityOrderDesc[a.priority] - priorityOrderDesc[b.priority]);
   tasks.sort((a, b) => (a.isChecked ? 1 : 0) - (b.isChecked ? 1 : 0));
  };
+
+const sortFunctionsUnchecked = [
+  sortDesc,
+  sortAsc
+];
 
 const sortFunctions = [
   sortDesc,
@@ -65,12 +71,19 @@ wrapper.addEventListener('click', (event) => {
 });
 
 sortButton.addEventListener('click', () => {
-  sortFunctions[sortIndex]();
-  sortIndex = (sortIndex + 1) % sortFunctions.length;  
 
+  if (!globalIsChecked) {
+    sortFunctionsUnchecked[sortIndex]();
+    sortIndex = (sortIndex + 1) % sortFunctionsUnchecked.length; 
+  } else {
+    sortFunctions[sortIndex]();
+    sortIndex = (sortIndex + 1) % sortFunctions.length;
+  }
+    
   updateLocalStorage();
   listItemsContainer.replaceChildren();
   onPageLoad();
+ 
 });
 
 function addTaskToList() {
@@ -157,6 +170,7 @@ function addTaskToList() {
 
   checkboxInput.addEventListener('click', () => {
     taskObject.isChecked = checkboxInput.checked;
+    globalIsChecked = tasks.some(task => task.isChecked);
     taskText.classList.toggle('striked', taskObject.isChecked);
     updateLocalStorage();
   });
@@ -282,6 +296,7 @@ function onPageLoad() {
     checkboxInput.addEventListener('click', () => {
       task.isChecked = checkboxInput.checked;
       taskText.classList.toggle('striked', checkboxInput.checked);
+      globalIsChecked = tasks.some(task => task.isChecked);
       updateLocalStorage();
     });
 
