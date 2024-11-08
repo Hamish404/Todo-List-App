@@ -21,7 +21,13 @@ Built With
 	•	JavaScript - Task management, sorting, and local storage integration.
 	•	Font Awesome - Icons for buttons and UI elements.
 
-Getting Started
+How to Run the App
+
+You can view the live version of the app hosted on GitHub Pages by clicking the link below:
+
+	•	https://hamish404.github.io/Todo-List-App/
+
+To run the app locally: 
 
 To run this app locally, follow these instructions.
 
