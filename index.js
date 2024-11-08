@@ -73,6 +73,9 @@ wrapper.addEventListener('click', (event) => {
 sortButton.addEventListener('click', () => {
 
   if (!globalIsChecked) {
+    if (sortIndex >= sortFunctionsUnchecked.length) {
+      sortIndex = 0;
+    }
     sortFunctionsUnchecked[sortIndex]();
     sortIndex = (sortIndex + 1) % sortFunctionsUnchecked.length; 
   } else {
