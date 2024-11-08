@@ -25,7 +25,7 @@ How to Run the App
 
 You can view the live version of the app hosted on GitHub Pages by clicking the link below:
 
-	•	[Live Demo](https://hamish404.github.io/Todo-List-App/)
+		[Live Demo](https://hamish404.github.io/Todo-List-App/)
 
 To run the app locally: 
 
